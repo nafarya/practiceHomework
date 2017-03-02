@@ -12,9 +12,13 @@ TARGET = practice
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp
+SOURCES += main.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  +=
 
-FORMS    += mainwindow.ui
+FORMS    +=
+
+INCLUDEPATH += /home/dan/.opencv/include
+
+LIBS += -L/home/dan/.opencv/lib/ -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+LIBS += -lHalf -lIlmImf
