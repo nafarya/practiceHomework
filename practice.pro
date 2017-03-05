@@ -12,11 +12,14 @@ TARGET = practice
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    mainwindow.cpp
 
-HEADERS  +=
+HEADERS  += \
+    mainwindow.h
 
-FORMS    +=
+FORMS    += \
+    mainwindow.ui
 
 INCLUDEPATH += /home/dan/.opencv/include
 
